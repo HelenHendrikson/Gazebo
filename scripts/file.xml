@@ -1,0 +1,201 @@
+
+<?xml version="1.0"?>
+<sdf version="1.4">
+<world name="default">
+<scene>
+ <grid>false</grid>
+</scene>
+<include>
+      <uri>model://ground_plane</uri>
+</include>
+
+<model name="my_ground_plane">
+  <static>true</static>
+   <pose>0 0 10 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>20 5.00000000000000000000</size>
+          </plane>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>25 5.00000000000000000000</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://my_ground_plane/materials/scripts/my_ground_plane.material</uri>
+            <name>MyGroundPlane/Terrain</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+<population name="rock1_population">
+      <model name="rock1">
+        <include>
+          <uri>model://rock1</uri>
+        </include>
+      </model>
+      <pose>5 2 0 0 0 0</pose>
+      <box>
+        <size>20 20 2</size>
+      </box>
+      <model_count>3</model_count>
+       <distribution>
+        <type>uniform</type>
+        <step>4 5 0</step>
+      </distribution>
+    </population>
+
+<model name="my_ground_plane">
+  <static>true</static>
+   <pose>0 0 20 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>25 10.00000000000000000000</size>
+          </plane>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>20 10.00000000000000000000</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://my_ground_plane/materials/scripts/my_ground_plane.material</uri>
+            <name>MyGroundPlane/Granite</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+<population name="rock2_population">
+      <model name="rock2">
+        <include>
+          <uri>model://rock2</uri>
+        </include>
+      </model>
+      <pose>15 0 0 0 0 0</pose>
+      <box>
+        <size>20 20 2</size>
+      </box>
+      <model_count>3</model_count>
+      <distribution>
+        <type>uniform</type>
+        <step>6 6 0</step>
+      </distribution>
+    </population>
+
+<model name="my_ground_plane">
+  <static>true</static>
+   <pose>7 7 25 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>25 5.00000000000000000000</size>
+          </plane>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>25 5.00000000000000000000</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://my_ground_plane/materials/scripts/my_ground_plane.material</uri>
+            <name>MyGroundPlane/Sidewalk</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+
+<model name="my_ground_plane">
+  <static>true</static>
+   <pose>1 15 30 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>25 35.00000000000000000000</size>
+          </plane>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 0</normal>
+            <size>25 35.00000000000000000000</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://my_ground_plane/materials/scripts/my_ground_plane.material</uri>
+            <name>MyGroundPlane/Grass</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+<population name="tree1_population">
+      <model name="tree1">
+        <include>
+          <uri>model://tree1</uri>
+        </include>
+      </model>
+      <pose>9 15 0 0 0 0</pose>
+      <box>
+        <size>20 20 30</size>
+      </box>
+      <model_count>3</model_count>
+      <distribution>
+        <type>linear-y</type>
+      </distribution>
+    </population>
+
+<population name="tree2_population">
+      <model name="tree2">
+        <include>
+          <uri>model://tree2</uri>
+        </include>
+      </model>
+      <pose>29 0 0 0 0 0</pose>
+      <box>
+        <size>20 20 30</size>
+      </box>
+      <model_count>3</model_count>
+      <distribution>
+         <type>linear-x</type>
+         <step>5 5 0</step>
+      </distribution>
+    </population>
+
+</world>
+</sdf>
