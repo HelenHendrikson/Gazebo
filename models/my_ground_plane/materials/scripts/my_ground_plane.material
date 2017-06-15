@@ -1,0 +1,169 @@
+material MyGroundPlane/Sidewalk
+    {
+      technique
+      {
+        pass
+        {
+          ambient 0.5 0.5 0.5 1.0
+          diffuse 1.0 1.0 1.0 1.0
+          specular 0.0 0.0 0.0 1.0 0.5
+
+          texture_unit
+          {
+            texture sidewalk.jpg
+            filtering trilinear
+          }
+        }
+      }
+    }
+
+material MyGroundPlane/Grass
+    {
+      technique
+      {
+        pass
+        {
+          ambient 0.5 0.5 0.5 1.0
+          diffuse 1.0 1.0 1.0 1.0
+          specular 0.0 0.0 0.0 1.0 0.5
+
+          texture_unit
+          {
+            texture grass.jpg
+            filtering trilinear
+          }
+        }
+      }
+    }
+
+material MyGroundPlane/Terrain
+    {
+      technique
+      {
+        pass
+        {
+          ambient 0.5 0.5 0.5 1.0
+          diffuse 1.0 1.0 1.0 1.0
+          specular 0.0 0.0 0.0 1.0 0.5
+
+          texture_unit
+          {
+            texture terrain.png
+            filtering trilinear
+          }
+        }
+      }
+    }
+
+material MyGroundPlane/Granite
+    {
+      technique
+      {
+        pass
+        {
+          ambient 0.5 0.5 0.5 1.0
+          diffuse 1.0 1.0 1.0 1.0
+          specular 0.0 0.0 0.0 1.0 0.5
+
+          texture_unit
+          {
+            texture granite.jpg
+            filtering trilinear
+          }
+        }
+      }
+    }
+
+
+material MyGroundPlane/Texture
+    {
+      technique
+      {
+        pass
+        {
+          ambient 0.5 0.5 0.5 1.0
+          diffuse 1.0 1.0 1.0 1.0
+          specular 0.0 0.0 0.0 1.0 0.5
+
+          texture_unit
+          {
+            texture texture.png
+            filtering trilinear
+          }
+        }
+      }
+    }
+
+material MyGroundPlane/Puukoor
+    {
+      technique
+      {
+        pass
+        {
+          ambient 0.5 0.5 0.5 1.0
+          diffuse 1.0 1.0 1.0 1.0
+          specular 0.0 0.0 0.0 1.0 0.5
+
+          texture_unit
+          {
+            texture puuKoor.jpg
+            filtering trilinear
+          }
+        }
+      }
+    }
+
+material MyGroundPlane/Palmtreetexture
+    {
+      technique
+      {
+        pass
+        {
+          ambient 0.5 0.5 0.5 1.0
+          diffuse 1.0 1.0 1.0 1.0
+          specular 0.0 0.0 0.0 1.0 0.5
+
+          texture_unit
+          {
+            texture palmtreetexture.png
+            filtering trilinear
+          }
+        }
+      }
+    }
+
+material MyGroundPlane/Hardwood
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+
+      texture_unit
+      {
+        texture hardwood_floor.jpg
+        filtering trilinear
+      }
+    }
+  }
+
+material MyGroundPlane/Peigewall
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.5 0.5 0.5 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+
+      texture_unit
+      {
+        texture peigeWall.jpg
+        filtering trilinear
+      }
+    }
+  }
